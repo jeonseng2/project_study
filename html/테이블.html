@@ -5,23 +5,66 @@
     <title>Document</title>
 </head>
 <body>
+    <!--
+      헤더스 사용방법
+     https://www.w3.org/TR/WCAG20-TECHS/H43.html
 
-      <table border="1" width="100%">
+     -->
+      <table border="1" width="100%" summary="세부설명">
 
-          <tr>
-             <td>text</td>
-             <td>text</td>
-             <td>text</td>
-             <td>text</td>
-         </tr>
 
-         <tr>
-             <td>text</td>
-             <td>text</td>
-             <td>text</td>
-             <td>text</td>
-         </tr>
-         </table>
+                   <caption> 표의 제목 </caption>
+
+                   <colgroup>
+                       <col width='100'/>
+                       <col />
+                       <col width='100'/>
+                       <col />
+
+                   </colgroup>
+
+                   <!-- colgroup 칸 사이즈를 일일이 하지 않아도 됨 -->
+           <!-- 같은 영역안에 있는 것만 합칠 수 있음 -->
+           <!--  th rowspan='' 같은 영역안에 있는 셀 위아래 합치기
+                 합칠 때는 ex) rowspan='2'하면 같은 영역 하단 text 지워줘야함-->
+           <!--↓ th colspan='' 셀 합치기  -->
+           <!-- scope='row'가로 'col'아래 리딩기가 읽어주는 방향을 알려줌
+            rowgroup은 셀을 합쳐주었을 때만 사용하고 합치지 않았을 경우에는
+        사용하지 않는다. -->
+
+          <thead>
+
+               <tr>
+                <th colspan="4" scope="colgroup" id="f1">text</th>
+
+               </tr>
+          </thead>
+          <tfoot>
+               <tr>
+                   <th scope='col' id='f22'>text</th>
+                   <td scope='col' id='f23'>text</td>
+                   <td scope='col' id='f24'>text</td>
+                   <td scope='col' id='f25'>text</td>
+               </tr>
+           </tfoot>
+           <tbody>
+              <tr>
+                 <th scope='rowgroup' rowspan="3" id='c44'>test</th>
+                 <td>text</td>
+                 <td>text</td>
+                 <td>text</td>
+               </tr>
+               <tr>
+                  <td rowspan='2' id='g11'>text</td>
+                  <td>text</td>
+                  <td>text</td>
+                </tr>
+                <tr>
+                   <td headers="f1 f24 c44 g11">test</td>
+                   <td>text</td>
+                 </tr>
+           </tbody>
+      </table>
 
 
 
