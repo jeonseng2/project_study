@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>회원가입</h1>
+
+<form>
+<fieldset>
+     <legend>필수입력</legend>
+          <ul>
+             <li>
+               <label for="userId">아이디 : </label>
+               <input type="text" id="userId" name="" placeholder="아이디"/>
+               <input type="button" value="중복확인" />
+             </li>
+             <li>
+               <label for="userPw">비밀번호 : </label>
+               <input type="password" id="userPw" name="" placeholder="패스워드"/>
+               
+             </li>
+             <li>
+                <label for="userHobby">취미 : </label>
+                <input type="checkbox" name="" id="userHobby1" /><lebel for="userHobby1">축구</label>
+                <input type="checkbox" name="" id="userHobby2" /><label for="userHobby2">농구</label>
+                <input type="checkbox" name="" id="userHobby3" /><label for="userHobby3">배구</label>
+                <input type="checkbox" name="" id="userHobby4" /><label for="userHobby4">당구</label>
+                <input type="checkbox" name="" id="userHobby5" /><label for="userHobby5">음악감상</label>
+             </li>
+             <li>
+                <label for="city">도시 : </label>
+                <input type="radio" name="city" id="seoul" /><lebel for="seoul">서울</label>
+                <input type="radio" name="city" id="busan" /><label for="busan">부산</label>
+                <input type="radio" name="city" id="daegu" /><label for="daegu">대구</label>
+                <input type="radio" name="city" id="cheongju" /><label for="cheongju">청주</label>
+                <input type="radio" name="city" id="kangwon" /><label for="kangwon">강원</label>
+             </li>
+             <li>
+                <label for="a1">결혼여부</label>
+                <input type="radio" name="aa" id="a1" /><label for="a1">미혼</label>
+                <input type="radio" name="aa" id="a2" /><label for="a2">기혼</label>
+                <input type="radio" name="aa" id="a3" /><label for="a3">예정</label>
+             </li>
+             <li>
+                <label for="photoUpload">사진업로드</label>
+                <input type="file" id="photoUpload" />
+             </li>
+
+        </ul>
+
+        <input type="submit" value="전송" />
+        <input type="button" value="취소" />
+        <input type="reset" value="초기화" />
+
+</fieldset>
+</form>
+
+
+</body>
+</html>
