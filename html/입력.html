@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--
+html:input
+
+      엘리먼트 <input/>
+      속성 type = 종류
+                  text = 텍스트를 입력 받을 때
+                  password = 비밀번호 형식으로 텍스트가 비공개
+                  radio = 단일선택
+                  checkbox = 다중선택
+                  button = 범용(뭐든지 쓸 수 있다)
+                  reset = 내가 작성한 폼의 내용을 삭제할 때(폼의 내용 초기화)
+                  submit = 전송을 할 때 사용함
+                  file  = 파일/선택 및 업로드 할 때 사용
+                (submit/file은 거의 사용하지 않음)
+
+
+              <Label for=""></Label>
+
+
+               <fieldset>
+                   <legend></legend>
+               </fieldset>
+           -->
+
+           <Label for="userID1">아이디</Label>
+           <input type="text" id="userID1">
+           <br />
+   <input type="checkbox" id="test"><Label for="test">동의하시겠습니까?</Label>
+
+
+
+         <h1>회원가입신청서</h1>
+
+          <fieldset>
+              <legend>필수입력</legend>
+              <ul>
+                    <li> <Label for="userID">아이디 : </Label>
+                    <input type="text" id="userID" /> </li>
+                    <li> 이름 : <input type="text"></li>
+               </ul>
+          </fieldset>
+
+          <fieldset>
+              <legend>부가정보</legend>
+              <ul>
+                    <li> 아이디 : <input type="text" /> </li>
+                    <li> 이름 : <input type="text" /> <li>
+               </ul>
+          </fieldset>
+
+
+
+</body>
+</html>
